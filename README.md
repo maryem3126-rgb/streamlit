@@ -1,59 +1,57 @@
 # App Competitor Analysis — Streamlit
 
-Application Streamlit d'analyse concurrentielle d'applications mobiles, construite dans le cadre du **Lab 2 — Data Applications**.
+A Streamlit application for competitor analysis of mobile apps, built as part of **Lab 2 — Data Applications**.
 
-L'application interroge le **Google Play Store** à partir d'un terme de recherche choisi par l'utilisateur, récupère les données des applications correspondantes (notes, installations, genre, prix) ainsi que les avis des utilisateurs, puis présente le tout sous forme de tableau et de visualisations interactives.
+The application queries the **Google Play Store** based on a search term chosen by the user, retrieves the data of the matching apps (ratings, installs, genre, price) as well as the user reviews, then displays everything as a table and interactive visualizations.
 
-## Fonctionnalités
+## Features
 
-- **Recherche dynamique** : l'utilisateur saisit son propre terme de recherche.
-- **Tableau de résultats** : affichage des applications trouvées avec leurs principales métriques.
-- **Visualisations interactives** (Plotly) :
-  - Distribution des notes
-  - Répartition gratuit / payant
-  - Top 10 des applications par note
-  - Répartition par genre
-- **Filtre latéral** pour affiner les graphiques par application.
-- **Récupération des avis** des utilisateurs, utile pour une future analyse de sentiment.
+- **Dynamic search**: the user enters their own search term.
+- **Results table**: displays the apps found with their main metrics.
+- **Interactive visualizations** (Plotly):
+  - Rating distribution
+  - Free vs Paid breakdown
+  - Top 10 apps by rating
+  - Distribution by genre
+- **Sidebar filter** to refine the charts by app.
+- **User reviews retrieval**, useful for a future sentiment analysis.
 
-## Structure du projet
+## Project structure
 
-```
+​```
 STREAMLIT/
-├── Home.py                  # Page d'accueil de l'application
-├── utils.py                 # Fonctions de récupération des données (API Play Store)
+├── Home.py                  # Application homepage
+├── utils.py                 # Data retrieval functions (Play Store API)
 ├── pages/
-│   ├── 1_Results_Table.py   # Recherche + tableau des résultats
-│   └── 2_Visualizations.py  # Graphiques et filtres
-├── requirements.txt         # Dépendances
+│   ├── 1_Results_Table.py   # Search + results table
+│   └── 2_Visualizations.py  # Charts and filters
+├── requirements.txt         # Dependencies
 └── .gitignore
-```
+​```
 
-## Installation et lancement
+## Installation and run
 
-1. Cloner le dépôt :
-   ```
+1. Clone the repository:
+   ​```
    git clone https://github.com/maryem3126-rgb/streamlit.git
    cd streamlit
-   ```
+   ​```
 
-2. Créer et activer un environnement, puis installer les dépendances :
-   ```
+2. Create and activate an environment, then install the dependencies:
+   ​```
    pip install -r requirements.txt
-   ```
+   ​```
 
-3. Lancer l'application :
-   ```
+3. Run the application:
+   ​```
    streamlit run Home.py
-   ```
+   ​```
 
-L'application s'ouvre dans le navigateur à l'adresse `http://localhost:8501`.
+The application opens in the browser at `http://localhost:8501`.
 
 ## Technologies
 
-- [Streamlit](https://streamlit.io) — framework d'application de données
-- [google-play-scraper](https://pypi.org/project/google-play-scraper/) — extraction des données du Play Store
-- [Plotly](https://plotly.com/python/) — visualisations interactives
-- [pandas](https://pandas.pydata.org/) — manipulation des données
-
-
+- [Streamlit](https://streamlit.io/) — data application framework
+- [google-play-scraper](https://pypi.org/project/google-play-scraper/) — Play Store data extraction
+- [Plotly](https://plotly.com/python/) — interactive visualizations
+- [pandas](https://pandas.pydata.org/) — data manipulation
