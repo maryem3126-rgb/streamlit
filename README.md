@@ -37,7 +37,7 @@ STREAMLIT/
    cd streamlit
    ```
 
-2. (Recommandé) Créer et activer un environnement, puis installer les dépendances :
+2. Créer et activer un environnement, puis installer les dépendances :
    ```
    pip install -r requirements.txt
    ```
@@ -56,13 +56,4 @@ L'application s'ouvre dans le navigateur à l'adresse `http://localhost:8501`.
 - [Plotly](https://plotly.com/python/) — visualisations interactives
 - [pandas](https://pandas.pydata.org/) — manipulation des données
 
-## Pistes d'amélioration
 
-- Ajouter d'autres sources de données (ProductHunt, GitHub).
-- Analyse de sentiment sur les avis collectés.
-- Visualisations supplémentaires (heatmaps, box plots, word cloud).
-- Mise en cache des résultats pour accélérer les recherches répétées.
-
-## Auteur
-
-Projet réalisé par **Maryem RABACH** dans le cadre du cours *Introduction to Data Applications*.
