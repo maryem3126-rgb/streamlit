@@ -1,13 +1,10 @@
 import streamlit as st
-
-# Set the browser tab title, icon, and layout. Must be the first
 st.set_page_config(
     page_title="Competitor Analysis",
-    page_icon="📊",
     layout="wide",
 )
 
-st.title("📊 App Competitor Analysis")
+st.title("Competitor Analysis")
 
 st.markdown(
     """
@@ -15,19 +12,22 @@ st.markdown(
     **Google Play Store** for any search term you choose.
 
     ### What it does
-    - **Results Table** – type a search term and pull live app data
+    - **Search** – type a search term and pull live app data
       (ratings, installs, price, genre) from the Play Store.
     - **Visualizations** – charts that turn that data into insight:
       rating distributions, top apps, free-vs-paid breakdown, and more.
+    - **Sentiment Analysis** – analyzes user reviews with a Hugging Face
+      model to show how users feel about each app.
 
-    ### How to use it
-    1. Open the **Results Table** page from the left sidebar.
-    2. Enter a search term (e.g. *note taking ai*, *mental health*) and run the search.
-    3. Head to the **Visualizations** page to explore the charts.
+    ### Key Features
+    - Dynamic search: choose any search term you want.
+    - Interactive charts: ratings, genres, free vs paid, top apps.
+    - Sidebar filter to focus the charts on specific apps.
+    - Sentiment analysis on user reviews using a Hugging Face model.
 
-    ### Tech
-    Built with [Streamlit](https://streamlit.io) and the
-    `google-play-scraper` library.
+    ### How to improve it
+    - Add more data sources (ProductHunt, GitHub).
+    - Add richer visualizations (heatmaps, box plots, word clouds).
 
     """
 )

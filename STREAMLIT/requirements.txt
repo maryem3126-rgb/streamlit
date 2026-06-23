@@ -2,3 +2,5 @@ streamlit
 pandas
 google-play-scraper
 plotly
+transformers
+torch
